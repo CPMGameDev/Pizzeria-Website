@@ -4,3 +4,29 @@ html, body {
     padding: 0; 
 }
 
+.navbar-custom {
+    background-color: black;
+}
+
+.header {
+    position: relative;
+
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay{
+	position: absolute;
+	min-height: 100%;
+	min-width: 100%;
+	left: 0;
+	top: 0;
+	background: rgba(244, 244, 244, 0.79);
+}
+
+.deals {
+    margin: 5em 0;
+    padding: 1em;
+    position: relative;
+}
+
