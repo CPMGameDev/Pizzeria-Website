@@ -4,9 +4,14 @@ html, body {
     padding: 0; 
 }
 
-.navbar-custom {
-    background-color: black;
-    color: white;
+.custom-black {
+  background-color: black;
+  color: white;
+}
+
+.custom-black {
+  background-color: black;
+  color: white;
 }
 
 .header {
@@ -14,6 +19,15 @@ html, body {
 
     background-size: cover;
     background-position: center;
+}
+
+.parallax {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
 }
 
 .overlay{
@@ -31,7 +45,12 @@ html, body {
     position: relative;
 }
 
-.jumbotron {
+hr.hr-footer {
+  border: 1px solid white;
+  margin: 0 15%;
+}
+
+.jumbotron-custom {
     background-image: url(/images/vegetables-italian-pizza-restaurant.jpg);
     background-size: cover;
     height: 80%;
@@ -48,7 +67,14 @@ html, body {
     bottom: initial;
 }
 
-/* smoother transitions */
+@media only screen and (max-device-width: 1024px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+
+/*
+
 .carousel-inner>.carousel-item.next.left,
 .carousel-inner>.carousel-item.prev.right,
 {
@@ -56,7 +82,7 @@ html, body {
 }
 
 @media (min-width: 768px) {
-    /* show 3 items */
+
     .carousel-inner .active,
     .carousel-inner .active + .carousel-item,
     .carousel-inner .active + .carousel-item + .carousel-item {
@@ -84,7 +110,6 @@ html, body {
       visibility: visible;
     }
   
-    /* left or forward direction */
     .active.carousel-item-left + .carousel-item-next.carousel-item-left,
     .carousel-item-next.carousel-item-left + .carousel-item,
     .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
@@ -94,7 +119,7 @@ html, body {
       visibility: visible;
     }
   
-    /* farthest right hidden item must be abso position for animations */
+    
     .carousel-inner .carousel-item-prev.carousel-item-right {
       position: absolute;
       top: 0;
@@ -104,7 +129,7 @@ html, body {
       visibility: visible;
     }
   
-    /* right or prev direction */
+
     .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
     .carousel-item-prev.carousel-item-right + .carousel-item,
     .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
@@ -115,7 +140,7 @@ html, body {
       display: block;
       visibility: visible;
     }
-  }
+  } */
   
 
 
