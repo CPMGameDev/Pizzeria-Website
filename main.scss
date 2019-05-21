@@ -1,0 +1,148 @@
+$theme-colors: (
+    "success": #3ab54a,
+    "danger": #f01823,
+    "dark": black
+);
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+html, body { 
+    height: 100%; 
+    margin: 0; 
+    padding: 0; 
+}
+
+.nav-item::after {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 2px;
+    background: white;
+    transition: 0.2s;
+}
+
+.nav-item-red::after {
+    background: theme-color("danger");
+}
+
+.nav-item-green::after {
+    background: theme-color("success");
+}
+
+.nav-item:hover::after {
+    width: 100%;
+}
+
+.nav-item-test:hover::after {
+    width: 100%;
+}
+
+.nav-link {
+    padding: 15px 5px;
+    transition: 0.2s;
+}
+
+.header {
+    position: relative;
+
+    background-size: cover;
+    background-position: center;
+}
+
+.parallax {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50%;
+}
+
+.parallax .overlay{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  opacity: .7;
+  background-color:rgba(0,0,0,0.5);
+}
+
+.jumbotron .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 1;
+  background-color:rgba(0,0,0,0.5);
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  max-height: 450px !important;
+}
+
+.overlay {
+	position: absolute;
+	min-height: 100%;
+	min-width: 100%;
+	left: 0;
+	top: 0;
+	background: rgba(244, 244, 244, 0.79);
+}
+
+.deals {
+    margin: 5em 0;
+    padding: 1em;
+    position: relative;
+}
+
+hr.hr-footer {
+  border: 1px solid white;
+  margin: 0 15%;
+}
+
+#map {
+  width: 100%;
+  height: 600px;
+  background-color: grey;
+}
+
+.jumbotron-custom {
+    background-image: url(/images/vegetables-italian-pizza-restaurant.jpg);
+    background-size: cover;
+    height: 80%;
+}
+
+.jumbotron-heading {
+  opacity: 0.2;
+  color: #fff;
+  background: #000;
+  overflow: hidden;
+  z-index: 1;
+}
+ 
+.carousel-caption {
+    color: black;
+    right: 58%;
+    text-align: center;
+    max-width: 500px;
+    left: auto;
+    top: 40%;
+    transform: translateY(-40%);
+    bottom: initial;
+}
+
+@media only screen and (max-device-width: 1024px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+
+
+
+
+  
+
